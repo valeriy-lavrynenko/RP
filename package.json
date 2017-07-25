@@ -1,0 +1,16 @@
+{
+  "name": "ui-testing-framework",
+  "version": "0.0.1",
+  "dependencies": {
+    "protractor": "5.1.2",
+    "lodash": "4.17.4",
+    "jasmine-spec-reporter": "4.1.0",
+    "request": "2.81.0",
+    "moment": "^2.18.1"
+  },
+  "scripts": {
+    "test-dev": "node ./node_modules/protractor/bin/protractor ./config/dev.conf.js",
+    "wd-start": "node ./node_modules/protractor/bin/webdriver-manager start",
+    "wd-update": "node ./node_modules/protractor/bin/webdriver-manager update"
+  }
+}
