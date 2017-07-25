@@ -9,8 +9,8 @@ describe('Test Task', () => {
     });
 
     it('Fill form', () => {
-        let checkin = moment().add(1, 'months').add(10, 'days');
-        let checkout = moment().add(2, 'months');
+        let checkin = moment();
+        let checkout = moment().add(7, 'days');
 
         const findDealsDialog = homePage.findDealsDialog;
         findDealsDialog.destination.set('New York');
