@@ -1,6 +1,8 @@
-const precondition = require('./pre.base.conf');
 
-module.exports.config = {
+
+import {precondition} from "./pre.base.conf";
+
+export const baseConfig = {
     params: {
         timeouts: {
             s: 1000,
@@ -20,5 +22,6 @@ module.exports.config = {
     },
     allScriptsTimeout: 60000,
     getPageTimeout: 60000,
-    onPrepare: precondition
+    onPrepare: precondition,
+    SELENIUM_PROMISE_MANAGER: false
 };

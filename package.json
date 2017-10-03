@@ -2,8 +2,10 @@
   "name": "ui-testing-framework",
   "version": "0.0.1",
   "dependencies": {
-    "protractor": "5.1.2",
-    "lodash": "4.17.4",
+    "protractor": "latest",
+    "lodash": "latest",
+    "jasmine": "latest",
+    "@types/jasmine": "^2.6.0",
     "jasmine-spec-reporter": "4.1.0",
     "request": "2.81.0",
     "moment": "^2.18.1"

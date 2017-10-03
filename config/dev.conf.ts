@@ -1,5 +1,5 @@
-const _ = require('lodash');
-const baseConfig = require('./base.conf.js').config;
+import {baseConfig} from "./base.conf";
+import * as _ from "lodash";
 
 const config = _.merge(baseConfig, {
     baseUrl: 'https://www.booking.com',
@@ -31,4 +31,4 @@ const config = _.merge(baseConfig, {
 
 config.multiCapabilities.forEach((capability, i, arr) => arr[i] = _.merge(capability, config.commonCapabilities));
 
-module.exports.config = config;
+export {config};
